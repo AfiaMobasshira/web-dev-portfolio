@@ -165,3 +165,38 @@ main section{
 .skills-container .skill .skill-description{
     font-size: 16px;
 }
+
+/* resume section design */
+
+.resume-container{
+    display: flex;
+    /* justify-content: space-between; */
+    gap: 24px;
+}
+.resume-container .resume-column .column-title{
+    font-size: 30px;
+    font-weight: bold;
+}
+.experience .experience-title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.experience .experience-subtitle{
+    font-size: 20px;
+    font-weight: 600;
+    line-height: auto;
+}
+.experience .experience-description{
+    font-size: 18px;
+    line-height: 28px;
+    width: 511px;
+}
+.resume hr{
+    color: #D1D1D1;
+    width: 90%;
+    margin: 0;
+}
+.resume-btn{
+    margin-top: 50px;
+    text-align: center;
+}
