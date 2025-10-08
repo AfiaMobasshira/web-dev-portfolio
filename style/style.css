@@ -45,6 +45,10 @@
     cursor: pointer;
     border: none;
 }
+.btn-primary i{
+    padding-right: 10px;
+}
+
 /* header */
 .header{
     background-image: url(../images/developer.png), url(../images/header_bg.png);
@@ -198,7 +202,12 @@ main section{
 }
 .resume-btn{
     margin-top: 50px;
-    text-align: center;
+}
+.resume-btn-item{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
 }
 
 /* footer style */
