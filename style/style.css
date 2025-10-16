@@ -6,6 +6,10 @@
     "wdth" 100;
 }
 
+.hide{
+    display: none;
+}
+
 /* shared color */
 .secondary-bg{
     background-color: #FFF8F3;
@@ -150,6 +154,12 @@ main section{
 }
 
 /* skill section design */
+.skill-section-description{
+    padding: 0px 100px;
+    font-size: 18px;
+    color: #757575;
+}
+
 .skills-container{
     display: flex;
     gap:24px;
@@ -228,9 +238,119 @@ footer .footer-column{
 footer input[type="text"], footer input[type="email"], footer textarea {
     width: 100%;
     display: block;
-    padding: 18px 30px;
+    padding: 18px 20px;
     background-color: white;
     border-radius: 5px;
     border: none;
     margin-bottom: 24px;
+}
+
+/* small device */
+@media screen and (max-width: 576px) {
+    /* main section margin */
+    main section{
+        margin: 50px 0;
+    }
+
+    /* about section */
+    .about{
+        padding: 20px;
+    }
+    .about .about-items, .skills-container, .resume-container{
+        flex-direction: column;
+    }
+    .about .about-items .item-title, .about .about-items .item-description{
+        font-size: 16px;
+    }
+    .section-title{
+        font-size: 25px;
+    }
+    .section-description{
+        font-size: 16px;
+    }
+    /* skill section */
+    .skill-section-description{
+        padding: 16px;
+        font-size: 16px;
+    }
+    /* resume section */
+    .resume{
+        padding: 16px;
+    }
+    .experience .experience-description{
+        width: 100%;
+    }
+    .resume-container .resume-column .column-title{
+        font-size: 23px;
+    }
+    .experience .experience-title{
+        font-size: 20px;
+    }
+    .experience .experience-subtitle{
+        font-size: 18px;
+    }
+    .experience .experience-description{
+        font-size: 16px;
+    }
+    /* button */
+    .btn-primary{
+        padding: 14px 20px;
+        font-size: 16px;
+    }
+    /* footer style */
+    footer{
+        flex-direction: column;
+        padding: 16px;
+    }
+    footer .footer-column{
+        width: 100%;
+    }
+    footer input[type="text"], footer input[type="email"], footer textarea{
+        width: calc(100% - 40px);
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    /* main section margin */
+    main section{
+        margin: 60px 0;
+    }
+    /* about section */
+    .about{
+        padding: 20px;
+    }
+    .about .about-items{
+        flex-direction: column;
+    }
+
+     /* skill section */
+    .skill-section-description{
+        padding: 16px;
+    }
+    .skills-container{
+        flex-direction: column;
+    }
+    /* resume section */
+    .resume{
+        padding: 16px;
+    }
+    .resume-container{
+        flex-direction: column;
+    }
+    .experience .experience-description{
+        width: 100%;
+    }
+    /* button */
+    .btn-primary{
+        padding: 16px 24px;
+        font-size: 18px;
+    }
+    /* footer style */
+    footer{
+        flex-direction: column;
+        padding: 16px;
+    }
+    footer .footer-column{
+        width: 100%;
+    }
 }
