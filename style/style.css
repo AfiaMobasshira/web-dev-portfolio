@@ -247,6 +247,31 @@ footer input[type="text"], footer input[type="email"], footer textarea {
 
 /* small device */
 @media screen and (max-width: 576px) {
+    /* header */
+    .header{
+        background-image: none;
+        padding: 16px;
+    }
+    nav ul{
+        gap: 20px;
+    }
+    .banner .banner-profile-pic{
+        width: 100%;
+    }
+    .banner, nav{
+        margin: 0px;
+    }
+    .banner .banner-content{
+        max-width: 100%;
+    }
+    .banner .banner-greetings{
+        font-size: 30px;
+    }
+    .banner .banner-title{
+        font-size: 50px;
+        padding-bottom: 20px;
+    }
+
     /* main section margin */
     main section{
         margin: 50px 0;
@@ -256,7 +281,7 @@ footer input[type="text"], footer input[type="email"], footer textarea {
     .about{
         padding: 20px;
     }
-    .about .about-items, .skills-container, .resume-container{
+    .about .about-items, .skills-container, .resume-container, .banner, nav, nav > ul{
         flex-direction: column;
     }
     .about .about-items .item-title, .about .about-items .item-description{
@@ -293,9 +318,10 @@ footer input[type="text"], footer input[type="email"], footer textarea {
         font-size: 16px;
     }
     /* button */
-    .btn-primary{
+    .btn-primary, .banner .banner-btn-contact{
         padding: 14px 20px;
         font-size: 16px;
+        margin-bottom: 10px;
     }
     /* footer style */
     footer{
@@ -311,6 +337,33 @@ footer input[type="text"], footer input[type="email"], footer textarea {
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
+    .about .about-items, .skills-container, .resume-container, .banner, nav, nav > ul{
+        flex-direction: column;
+    }
+    /* header */
+    .header{
+        background-image: none;
+        padding: 16px;
+    }
+    nav ul{
+        gap: 20px;
+    }
+    .banner .banner-profile-pic{
+        width: 100%;
+    }
+    .banner, nav{
+        margin: 0px;
+    }
+    .banner .banner-content{
+        max-width: 100%;
+    }
+    .banner .banner-greetings{
+        font-size: 30px;
+    }
+    .banner .banner-title{
+        font-size: 50px;
+        padding-bottom: 20px;
+    }
     /* main section margin */
     main section{
         margin: 60px 0;
@@ -319,29 +372,19 @@ footer input[type="text"], footer input[type="email"], footer textarea {
     .about{
         padding: 20px;
     }
-    .about .about-items{
-        flex-direction: column;
-    }
-
      /* skill section */
     .skill-section-description{
         padding: 16px;
-    }
-    .skills-container{
-        flex-direction: column;
     }
     /* resume section */
     .resume{
         padding: 16px;
     }
-    .resume-container{
-        flex-direction: column;
-    }
     .experience .experience-description{
         width: 100%;
     }
     /* button */
-    .btn-primary{
+    .btn-primary, .banner .banner-btn-contact{
         padding: 16px 24px;
         font-size: 18px;
     }
